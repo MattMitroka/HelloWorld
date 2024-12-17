@@ -1,6 +1,6 @@
 ﻿namespace HelloWorld
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,31 +34,36 @@
             // 
             // btnClickThis
             // 
-            btnClickThis.Location = new Point(200, 193);
+            btnClickThis.Anchor = AnchorStyles.None;
+            btnClickThis.Location = new Point(252, 114);
+            btnClickThis.Margin = new Padding(2);
             btnClickThis.Name = "btnClickThis";
-            btnClickThis.Size = new Size(112, 34);
+            btnClickThis.Size = new Size(104, 37);
             btnClickThis.TabIndex = 0;
-            btnClickThis.Text = "Click this";
+            btnClickThis.Text = "Change Label";
             btnClickThis.UseVisualStyleBackColor = true;
             btnClickThis.Click += btnClickThis_Click;
             // 
             // lblHelloWorld
             // 
+            lblHelloWorld.Anchor = AnchorStyles.None;
             lblHelloWorld.AutoSize = true;
-            lblHelloWorld.Location = new Point(227, 230);
+            lblHelloWorld.Location = new Point(226, 153);
+            lblHelloWorld.Margin = new Padding(2, 0, 2, 0);
             lblHelloWorld.Name = "lblHelloWorld";
-            lblHelloWorld.Size = new Size(59, 25);
+            lblHelloWorld.Size = new Size(172, 15);
             lblHelloWorld.TabIndex = 1;
-            lblHelloWorld.Text = "label1";
+            lblHelloWorld.Text = "Something Dynamic Goes Here";
             // 
-            // Form1
+            // frmMain
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(619, 279);
             Controls.Add(lblHelloWorld);
             Controls.Add(btnClickThis);
-            Name = "Form1";
+            Margin = new Padding(2);
+            Name = "frmMain";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
